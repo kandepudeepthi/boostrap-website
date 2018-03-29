@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>To Book A Table On Restarents</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/rest1.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+
+</head>
+<style type="text/css">
+	header{
+		z-index: 1;
+		position:fixed; 
+		width:100%; 
+		height:60px; 
+		background:rgba(0,0,0,0.5)
+	}
+	.banner-bg-image{
+		background-size:cover;
+		background-position:center center;
+		background-attachment:fixed;
+		text-align: center;
+	}
+	.banner-grid, .content{
+		text-align:center; 
+		position:relative;
+		width: 100%;
+	}
+
+	.inner{
+		position: relative;
+	}
+
+		.banner-content{
+			position:absolute; 
+			top:40%; 
+			height:10em; 
+			margin-top:-5em; 
+			width:100%;
+		}
+
+		.banner-grid h1, .hero p{ 
+			color:#fff;
+		}
+
+		.content h1, .content p{
+			color:#333;
+		}
+		.somex{
+			margin-left: 100px;
+			margin-right: 100px;
+			margin-top: 10px;
+		}
+		.somext{
+			margin-left: 100px;
+		}
+		.rounded{
+			border-radius: 5.25rem!important;
+		}
+
+
+		.bg-m button:hover {
+			background-color: #F7921E !important;
+		}
+		.white-m{
+			color:white;
+		}
+		.section-p-50{padding: 30px 0px;}
+		.section-bg{ background-color: #FFF;}
+		.some-m{
+			font-size: 11px;
+			color: black;
+		}
+
+		.mob-top-right-v{
+			@media (min-width: 768px) {
+				display: block;
+				width: 100% !important;
+			}
+			@media (max-width: 766px) {
+				padding: 0 !important;
+				min-width: 25px;
+				min-height: 25px;
+				position: absolute;
+				top: -98px;
+				opacity: 0.5;
+				float: right;
+				right: 0%;
+			}
+		}
+		.socialshare-container {
+			.btn {
+				margin: 5px 0 5px 5px;
+			}
+		}
+
+		.headerbar {
+			z-index: 1000;
+			width: 100%;
+			padding: 5px 0 0 0;
+			h3 {
+				margin: 5px 10px 10px 10px;
+			}
+		}
+
+		.action-buttons {
+			margin: 5px -10px 0 0;
+			.btn {
+				width: 140px;
+			}
+		}
+
+		.characters-allowed {
+			float: left;
+			margin: 6px;
+		}
+
+
+
+		.card-all {
+			height: 200px;
+			h5 {
+				word-break: break-all;
+			}
+		}
+		.card-a {
+			display: block;
+			width: 100%;
+			cursor: pointer;
+			height: 190px;
+			background: #efefef;
+			border: 3px solid #e5e5e5;
+			padding: 0 10px;
+			border-radius: 5px;
+			text-align: center;
+			margin-bottom: 10px;
+			color: #f5f5f5;
+		}
+		.card-preview {
+			min-width: 100%;
+			min-height: 100%;
+			width: 100px;
+			height: 200px;
+			object-fit: cover;
+		}
+		.card-b {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 190px;
+			background: rgba(0, 0, 0, 0.4);
+			margin: 5px;
+			text-align: center;
+			position: relative;
+			top: -200px;
+			opacity: 0;
+			padding: 10px;
+			border: 3px solid gray;
+			width: 100%;
+			left: -5px;
+			border-radius: 5px;
+		}
+		.card-b .content .btn{
+			display: block;
+			margin: 5px;
+		}
+		.card-all:hover .card-b {
+			opacity: 1;
+			color:white;
+		}
+		.card-all h1 {
+			margin-top: 10px;
+			color: orange;
+			margin-bottom: 0px;
+		}
+		.card-all{
+			div{
+				h5{
+					word-break: inherit;
+				}
+			}
+		}
+		.w-video-bg{background: #f5f5f0;}
+		.raising-moneybg{
+			background: url("images/img9.jpg") no-repeat left center;
+			width:100%;
+		}
+
+		.tag{
+			display: inline-block;
+			font-weight: 700;
+			border: 2px solid #fff;
+			padding: 12px 12px;
+			right: -70px;
+			color: #fff;
+			line-height: 14px;
+		}
+		.text-line{
+			margin-right: 26px;
+			margin-left: 26px;
+		}
+		@media screen and (min-width: 766px) {
+			.text-color-md ul li a{color: #fff}
+		}
+		.navbar-toggler:not(:disabled):not(.disabled) {
+			cursor: pointer;
+			background: #ffffff52;
+		}
+		footer {
+			font-size: 14px;
+			line-height: 22px;
+			color: #545454;
+			.homeTile-title {
+				padding: 20px;
+			}
+
+			h4 {
+				font-weight: bold;
+				margin-bottom: 20px;
+			}
+			p {
+				margin-bottom: 15px;
+				font-size: 14px !important;
+			}
+			.spacer {
+				margin-top: 30px;
+			}
+			.homeTile {
+				width: 100%;
+			}
+		}
+
+		.footer-menu {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			li {
+				display: inline;
+				padding-left: 10px;
+				&:before {
+					display: inline-block;
+					padding-right: 12px;
+				}
+				&:first-child:before {
+					display: none;
+				}
+			}
+			@media screen and (max-width: 766px) {
+				float: left !important;
+			}
+			@media screen and (max-width: 580px) {
+				top: 0px;
+				right: 0px;
+
+			}
+			@media screen and (max-width: 420px){
+				position: relative;
+				top: -52px;
+				right: 0px;
+			}
+
+
+		}
+
+		.footer-menu .pull-right{
+			@media screen and (max-width: 766px) {
+				float: left !important;
+				background-color: red;
+			} 
+		}
+		.someicon{
+			width: 30px;
+			line-height: 30px;
+			-moz-border-radius: 15px;
+			border-radius: 50%;
+			color: #FFF;
+			text-align: center;
+			display: block;
+			margin-right: 10px;
+			margin-top: 14px;
+		}
+		.facebook 
+		{
+			background-color: #305c99;
+		}
+		.twitter {
+			background-color: #1da1f2;
+		}
+		.linkedin {
+			background-color: #0077B5;
+		}
+		.footer-bottom{
+			background: #333337;
+			padding: 10px;
+		}
+		.banner-grid.banner-bg-image .inner {
+			min-height: 420px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			bottom: 0;
+		}
+		.some-max{
+			margin-left: 100px;
+		}
+	
+
+		.fontStyle>ul>li>a {
+			display: block;
+    font-family: "Pacifico",cursive;
+    line-height: 22px;
+    font-size: 20px;
+		}
+		.fontFamily{
+			font-style: italic;
+           color: #F7921E;
+          font-family: cursive;
+		}
+      .section-h{
+      	font-family: "Pacifico",cursive;
+      }
+      .media-list {
+    padding-left: 0;
+    list-style: none;
+}
+.events-list {
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    line-height: 1.8em;
+    vertical-align: middle;
+    border-radius: 2em;
+    float: left;
+    margin-right: 10px;
+}
+.media-heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+@media (max-width: 768px){
+.navbar-nav{
+	background: #fff !important;
+    padding: 15px;
+}
+}
+.dropdown-toggle::after {
+    margin-left: 3.255em;
+    position: relative;
+    top: -22px;
+}
+
+@media (min-width: 768px){
+		.navbar-expand-md {background: #fff;}
+}	
+@media screen and (min-width: 766px){
+.text-color-md ul li a {
+    color: #343a40;
+}	
+}
+@media (min-width: 768px){
+.navbar-expand-md {
+    background: #fff9;
+    height: 65px;
+    padding-top: 10px;
+}
+@media (min-width: 768px){
+.navbar-expand-md .navbar-nav {
+    margin-top: 18px;
+}
+}
+
+.input-group {
+    width: 70%;
+    float: right;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: 0em solid;
+    border-right: 0em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+.big-img:hover {
+ transform: scale(1.1) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transition: all 0.6s ease;
+     }
+.dropdown-menu li a{display: block; padding: 5px 15px;}
+.dropdown-menu li a:hover{ background-color: yellow; display: block; }
+@media (min-width: 768px){
+.navbar-expand-md .navbar-nav .dropdown-menu {padding: 0px;}
+}
+	</style>
+	<body>
+		<script type="text/javascript" src="slick/bootstrap-datetimepicker.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+<header itemscope itemtype="https://schema.org/WPHeader" class="bg-transparent">
+	<nav class="navbar navbar-expand-md text-color-md">
+		<a href="/" class="navbar-brand"><img class="pull-left somex" src="images/yumi.png" width="100" height="50"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar5">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse fontStyle" id="navbar5">
+			<ul class="navbar-nav">
+            <li class="dropdown nav-item active" style="margin-top: 9px; margin-right: 23px;">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">HOME</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+              </ul>
+            </li>
+		   <li class="dropdown nav-item active" style="margin-top: 9px; margin-right: 23px;">
+             
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown">MENUS</a>
+					<ul class="dropdown-menu">
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+              </ul>
+				</li>
+				<!-- 
+				            <li class="dropdown nav-item active" style="margin-top: 9px; margin-right: 23px;">
+				             					 <a href="#" class="dropdown-toggle" data-toggle="dropdown">FEATURES</a>
+					<ul class="dropdown-menu">
+				                <li><a href="#">Link1</a></li>
+				                <li><a href="#">Link2</a></li>
+				                <li><a href="#">Link3</a></li>
+				              </ul>
+				</li> -->
+				<li class="dropdown nav-item active" style="margin-top: 9px; margin-right: 23px;">
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESERVATION</a>
+					<ul class="dropdown-menu">
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+              </ul>
+				</li>
+			<li class="dropdown nav-item active" style="margin-top: 9px; margin-right: 23px;">
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT</a>
+					<ul class="dropdown-menu">
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+              </ul>
+				</li>
+		      <li class="dropdown nav-item active" style="margin-top: 9px; margin-right: 23px;">
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown">CONTACT</a>
+					<ul class="dropdown-menu">
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+              </ul>
+				</li>
+			</ul>
+			<form class="mx-2 my-auto d-inline w-100">
+				<div class="input-group">
+					<input type="text" class="form-control border border-right-0" placeholder="Search..." style="font-family: 'Pacifico',cursive;">
+					<span class="input-group-append">
+						<button class="btn btn-outline-secondary border border-left-0" type="button">
+							<i class="fa fa-search"></i>
+						</button>
+					</span>
+				</div>
+			</form>
+		</div>
+	</nav>
+</header>
+
+<section class="banner-grid banner-bg-image">
+	<div class="hero-slider">
+		<figure>
+			<img src="images/restarent.jpg" alt="image" width="100%">
+		</figure>
+		<figure>
+			<img src="images/restarent5.jpg" alt="image" width="100%">
+		</figure>
+		<figure>
+			<img src="images/restarent6.jpg" alt="image" width="100%">
+		</figure>
+		<figure>
+			<img src="images/restarent4.jpg" alt="image" width="100%">
+		</figure>
+	</div>
+	<div class="inner">
+		<div class="banner-content">
+			<img src="images/restlogo.png" class="rounded" alt="Cinque Terre" width="80" height="80">
+			<h1 class="light-color section-h">WELCOME LOVE DELECIOUS</h1>
+			<div class="text-center bg-m">
+				<button type="button" class="btn section-h">View Menu</button>
+				<button type="button" class="btn section-h">Book At Table</button>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="testimonial-div section-p-50 section-bg text-center">
+		<div class="container">
+			<h3 class="section-h">Our Menu</h3>
+			<h6 class="fontFamily">Today is a Special Day</h6>           
+			<hr>
+			<a class="somext some-m section-h" href="#" id="js-pizza">PIZZA</a>
+			<a class="somext some-m section-h" href="#" id="js-nonVeg">NON-VEG</a>
+			<a class="somext some-m section-h" href="#" id="js-vegBir">VEG-BIRIYANI</a>
+			<a class="somext some-m section-h" href="#" id="js-Burger">BURGERS</a>
+			<hr>
+
+			<div class="your-class js-pizza" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/salad.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/salad.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Salad Special Pizza</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$10</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/salad1.jpeg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/salad1.jpeg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Salad Salmon Pizza</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$14</h1>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/salad2.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/salad2.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Salad SimplePizza</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$16</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/salad3.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/salad3.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Salad Simple Pizza</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$15</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/salad3.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/salad3.jpg" class="rounded-circle some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Salad Custom Pizza</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$15</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/salad3.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/salad3.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Salad Salom Pizza</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$15</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="your-class js-nonvegClick" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}' style="display:none">
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/nveg1.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/nveg1.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Chicken Biriyani</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$20</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/fish1.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/fish1.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Fish Biriyani</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$30</h1>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/mveg.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/mveg.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Mutton Biriyani</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$30</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/nveg2.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/nveg2.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Chicken Dum Biriyani</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$25</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/nveg3.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/nveg3.jpg" class="rounded-circle some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Chicken Bone-less Biriyani</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$30</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/nveg4.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/nveg4.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Chicken Bone Biriyani</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$20</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="your-class js-vegClick" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}' style="display:none">
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/veg.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/veg.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Almond Biriyani</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$20</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/cveg.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/cveg.jpeg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Causeu Biriyani</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$30</h1>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/pveg.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/pveg.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Pot Biriyani</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$30</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/sveg.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/sveg.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Spicy Biriyani</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$25</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/veg2.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/veg2.jpg" class="rounded-circle some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Vegitable Biriyani</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$30</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/veg3.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/veg3.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Special Veg Biriyani</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$20</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="your-class js-burClick" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}' style="display:none">
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/bur.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/bur.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Veg Burger</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$20</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/bur1.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/bur1.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Causeu Burger</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$30</h1>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/bur2.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/bur2.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Non-Veg Burger</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$30</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/bur3.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/bur3.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Spicy Veg Burger</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$25</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/nbur.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/nbur.jpg" class="rounded-circle some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Vegitable Burger</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$30</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="" data-toggle="tooltip" title="Click to book">
+					<div class="card-all">
+						<div class="card-a" style="background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 100%, rgba(0, 0, 0, 0.5) 100%), url('images/nbur2.jpg') no-repeat;background-size: 100% 100%;">
+
+						</div>
+						<div class="card-b">
+							<div class="content">
+								<img src="images/nbur2.jpg" class="rounded-circle text-center some-max" alt="Cinque Terre" height="50" width="50">
+								<h3><strong>Special Veg Burger</strong></h3>
+								<h5 class="f-normal" style="font-size: 11px !important;">Also known as a fruit cocktail. A traditional dish in Indonesian cuisine</h5>
+								<h1 class="f-normal" style="font-size: 14px !important;">$20</h1>
+								<h4></h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="w-video-bg section-p-50 section-bg text-center" style="margin: 50px;">
+		<div class="container text-center">
+			<h3 class="section-h">Gallery</h3>
+			<h6 class="fontFamily">Sweet & Perfect</h6>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 big-img">
+					<a href="#"><img src=" images/restarent22.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="300"></a>
+				</div>
+				<div class="col-md-3 col-sm-6 big-img">
+					<a href="#"><img src=" images/restarent.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="300"></a>
+				</div>
+				<div class="col-md-3 col-sm-6 big-img">
+					<a href="#"><img src=" images/restarent21.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="300"></a>
+				</div>
+				<div class="col-md-3 col-sm-6 big-img">
+
+					<a href="#"><img src=" images/restarent22.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="300"></a>
+				</div>      
+			</div>
+			<div class="row" style="margin-top: 10px">
+				<div class="col-md-3 col-sm-6 big-img">
+					<a href="#"><img src=" images/restarent12.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="300"></a>
+				</div>
+				<div class="col-md-3 col-sm-6 big-img">
+					<a href="#"><img src=" images/restarent13.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="300"></a>
+				</div> 
+				<div class="col-md-3 col-sm-6 big-img">
+					<a href="#"><img src=" images/restarent14.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="300"></a>
+				</div>       
+				<div class="col-md-3 col-sm-6 big-img">
+					<a href="#"><img src=" images/restarent12.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="300"></a>
+				</div>            
+			</div>
+		</div>
+	</section>
+
+	<section class="raising-moneybg text-center" data-stellar-background-ratio="0.5" style="background-color:#F7921E !important;width: 100%; padding: 30px 0;">  
+		<div class="container text-center">
+			<div class="card" style="margin: 10px;">
+				<div class="card-body" style="background-color:#F7921E !important">
+					<h3 class="section-h" style="color: #fff !important;">Book A Table</h3>
+					<h6 class="fontFamily" style="color: #fff !important;">Try & Feel</h6>
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<div class="form-group">
+								<select class="form-control section-h" id="sel1">
+									<option>---Select People---</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+
+
+							</div></div>
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<input type="text" name="transaction_date" id="today_date" value="" class="form-control" title="Date">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<input type="text" name="time" value="" class="form-control" title="Date">
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<a href="#" class="text-center" style="display: block; width: 100%;"><span class="tag section-h" style="display: block; width: 100%;">Book the Table</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="testimonial-div section-bg text-center" style="margin:30px">
+			<h3 class="section-h">Upcoming Events</h3>
+			<h6 class="fontFamily">Discoverd & Useful</h6> 
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+						<img src=" images/restarent5.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="300">
+						<p class="" style="margin-right: 63px;"><strong> Christamus Week for everyone</strong></p>
+						<hr class="text-line">
+						<span style="padding-right: 83px;font-size: 10px;"><img src="images/cal.png" width="20" height="20"> Dec 25,2017&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span style="font-size: 10px;"><img src="images/time.jpg" width="20" height="20">8 AM-10 PM</span>
+						<hr class="text-line">
+						<p style="font-size: 10px;margin: 12px;font-family: initial;">UFrom marathons to talent shows or concerts or even sports tournaments, these can be ways to raise awareness for your cause.</p>
+						<p style="font-size: 10px;margin: 12px;"><strong>LearnMore--></strong></p>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<img src=" images/restarent7.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="300">
+						<p class="" style="margin-right: 63px;"><strong> Christamus Week for everyone</strong></p>
+						<hr class="text-line">
+						<span style="padding-right: 83px;font-size: 10px;"><img src="images/cal.png" width="20" height="20"> Dec 25,2017&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span style="font-size: 10px;"><img src="images/time.jpg" width="20" height="20">8 AM-10 PM</span>
+						<hr class="text-line">
+						<p style="font-size: 10px;margin: 12px;font-family: initial;">UFrom marathons to talent shows or concerts or even sports tournaments, these can be ways to raise awareness for your cause.</p>
+						<p style="font-size: 10px;margin: 12px;"><strong>LearnMore--></strong></p>
+					</div>
+					<div class="col-md-4 col-sm-6">
+						<img src=" images/restarent8.jpg" class="img-thumbnail" alt="Cinque Terre" width="300" height="300">
+						<p class="" style="margin-right: 63px;"><strong> Christamus Week for everyone</strong></p>
+						<hr class="text-line">
+						<span style="padding-right: 83px;font-size: 10px;"><img src="images/cal.png" width="20" height="20"> Dec 25,2017&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span><span style="font-size: 10px;"><img src="images/time.jpg" width="20" height="20">8 AM-10 PM</span>
+						<hr class="text-line">
+						<p style="font-size: 10px;margin: 12px;font-family: initial;">UFrom marathons to talent shows or concerts or even sports tournaments, these can be ways to raise awareness for your cause.</p>
+						<p style="font-size: 10px;margin: 12px;"><strong>LearnMore--></strong></p>
+					</div>     
+				</div>
+			</div>
+		</section>
+
+
+
+<section class="raising-moneybg text-center" data-stellar-background-ratio="0.5" style="background-color:#F7921E !important;width: 100%; padding: 30px 0;">  
+		<div class="container text-center">
+		<div class="row">
+		<div class="col-md-3 col-sm-6">
+		<img src=" images/restarentlog.jpg" class="rounded-circle" alt="Cinque Terre" width="100" height="100"></div>
+		<div class="col-md-3 col-sm-6">
+		<img src=" images/restarentlogo1.jpg" class="rounded-circle" alt="Cinque Terre" width="100" height="100"></div>
+		<div class="col-md-3 col-sm-6">
+		<img src=" images/restarentlogo2.jpg" class="rounded-circle" alt="Cinque Terre" width="100" height="100"></div>
+		<div class="col-md-3 col-sm-6">
+		<img src=" images/restarentlogo3.jpg" class="rounded-circle" alt="Cinque Terre" width="100" height="100"></div>
+		</div>
+		</div>
+	</section>
+
+
+
+<footer class="homefooterB" style="background: #ebebeb;">
+	<div class="container inner" style="padding:26px">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-3 inner">
+				<div class = "footerHeading" style="display: block; position: relative;"><img src="images/yumi.png" width="100px" height="50px">
+				</div>
+				<p style="display: block;">UFrom marathons to talent shows or concerts or even sports tournaments, these can be ways to raise awareness for your cause.UFrom marathons to talent shows or concerts or even sports tournaments, these can be ways to raise awareness for your cause.</p>
+
+				<!--social icons-->
+			</div>
+			<!-- /.col -->
+			<div class="col-xs-12 col-sm-6 col-md-3 inner old-margin-top">
+
+				<div class ="footerHeading m-t-1 section-h" style="font-size:20px"><strong>Contact Us</strong></div>
+				<p style="margin-top:10px"><i class="fa fa-home"></i>&nbsp&nbsp Patrika Nagar, Madhapur-500081.</p>
+				<p><i class="fa fa-clock-o"></i>&nbsp&nbsp Tuesday-Friday:8-00 AM - 9-00 AM.</p>
+				<p><i class="fa fa-envelope"></i>&nbsp&nbsp Exampletask@gmail.com.</p>
+				<p><i class="fa fa-phone"></i>&nbsp&nbsp 23456766766.</p>
+
+			</div>
+	<div class="col-xs-12 col-sm-12 col-md-3 inner old-margin-top">
+	<div class ="footerHeading m-t-1 section-h" style="font-size:20px"><strong>Blogs</strong></div>
+		  <div>
+          	<span class="events-list" aria-hidden="true"><r> <img src="images/img10.png" class="img rounded" alt="Cinque Terre" height="57px" width="57px"></r></span>
+        		<div class="media-body" style="margin-top:10px">
+          			<h3 class="media-heading"><p style="font-size: 13px">UFrom marathons to talent shows or concerts or even sports tournaments, these can be ways.</p></h3>
+        		</div>
+      	</div>
+      	<div>
+        	<span class="events-list" aria-hidden="true"><y><img src="images/restarent7.jpg" class="img rounded" alt="Cinque Terre" height="57px" width="57px"></y></span>
+        		<div class="media-body">
+          			<h3 class="media-heading"><p style="font-size: 13px">You can ask supporters to volunteer unused items lying around which they can drop off at a pre-decided location.</p></h3>
+          			
+        		</div>
+      	</div>	
+
+			</div>
+			<!-- /.col -->
+			<div class="col-xs-12 col-sm-12 col-md-3 inner old-margin-top-24">
+				<div class = "footerHeading section-h" style="font-size:20px"><strong>Subscibe</strong></div>
+				<span></span>
+				<div class="footer-social-icon" style="display: -webkit-inline-box;"> 
+					<span class="facebook someicon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+					<span class="twitter someicon" ><i class="fa fa-twitter" aria-hidden="true"></i></span>
+					<span class="linkedin someicon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container text-center">
+			<p class="section-h">© 2018 All rights reserved For This Application.</p>
+
+		</div>
+	</div>
+</footer>
+</body>
+</html>
+
